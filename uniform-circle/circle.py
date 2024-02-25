@@ -1,8 +1,4 @@
 # https://leetcode.com/problems/generate-random-point-in-a-circle/description/
-# https://stackoverflow.com/questions/5837572/generate-a-random-point-within-a-circle-uniformly
-# http://www.anderswallin.net/2009/05/uniform-random-points-in-a-circle-using-polar-coordinates/
-# https://stackoverflow.com/questions/1841014/uniform-random-monte-carlo-distribution-on-unit-sphere
-# https://mathworld.wolfram.com/SpherePointPicking.html
 
 import math
 import random
@@ -20,7 +16,8 @@ class Solution:
         self.x_center = x_center
         self.y_center = y_center
 
-    def randPoint(self) -> list[float]:
+    def randPoint(self, *args) -> list[float]:
+        # Write your code here
         rand_y = random.uniform(-self.radius, self.radius)
         rand_x = random.uniform(-self.radius, self.radius)
         x = self.x_center + rand_x
@@ -62,7 +59,7 @@ class Solution:
             ylim=(0, 1000),
             yticks=np.linspace(0, 1000, 11),
             xlabel="Radius",
-            ylabel="Points",
+            ylabel="No. of Points",
         )
         ax[1].set_aspect(np.diff(ax[1].get_xlim())[0] / np.diff(ax[1].get_ylim())[0])
 
@@ -76,20 +73,20 @@ class Solution:
 
 radius = 5
 s = Solution(radius, 0, 0)
-# s.plot("• Random square")
+s.plot("• Random square")
 
 
 # wrong
-def randPoint(self) -> list[float]:
-    r = random.uniform(0, self.radius)
-    theta = 2 * math.pi * random.uniform(0, 1)
-    x = self.x_center + r * math.cos(theta)
-    y = self.y_center + r * math.sin(theta)
-    return [x, y]
+# def randPoint(self) -> list[float]:
+#     r = random.uniform(0, self.radius)
+#     theta = 2 * math.pi * random.uniform(0, 1)
+#     x = self.x_center + r * math.cos(theta)
+#     y = self.y_center + r * math.sin(theta)
+#     return [x, y]
 
 
-s.randPoint = randPoint
-s.plot("• Naive approach")
+# s.randPoint = randPoint
+# s.plot("• Naive approach")
 
 
 # square
