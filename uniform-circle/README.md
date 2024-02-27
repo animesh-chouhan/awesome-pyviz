@@ -1,5 +1,7 @@
 # Generate Random Points in a Circle
 
+<img src="https://animeshchouhan.com/images/posts/circle-random/circle-random.png" alt="circle-random" style="width: 500px"/>
+
 Read the full blog post [here](https://animeshchouhan.com/posts/circle-random/).
 
 ## Motivation
