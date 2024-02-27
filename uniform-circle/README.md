@@ -1,5 +1,15 @@
 # Generate Random Points in a Circle
 
+Read the full blog post [here](https://animeshchouhan.com/posts/circle-random/).
+
+## Motivation
+
+I found this problem on [Leetcode](https://leetcode.com/problems/generate-random-point-in-a-circle/description/) while going through Geometry problems.
+So my first intuition was the most simple one, which everyone would get upon reading the problem for the first time. Unfortunately, that didn't work out,
+and I had no idea why. So I went on to extend the program to visualize my solution.
+
+Try it out with your ideas before checking out the correct approach!
+
 ## Problem Statement
 
 So the problem requires you to write a function that generates random points that are evenly distributed inside a circle of a given radius.
